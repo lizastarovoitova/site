@@ -1,0 +1,42 @@
+# ---------- Системные файлы ----------
+.DS_Store
+.AppleDouble
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ---------- Редакторы ----------
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# ---------- Исходники и черновики ----------
+# Репозиторий публичный: исходники и оригиналы фото сюда не попадают
+_drafts/
+_sources/
+*.fig
+*.psd
+*.sketch
+*.ai
+*.pdf
+*.heic
+*.HEIC
+*.raw
+*.JPG
+
+# ---------- Архивы и сборки ----------
+*.zip
+*.rar
+*.7z
+
+# ---------- На будущее: npm, локальные настройки ----------
+node_modules/
+npm-debug.log*
+.env
+.env.*
+*.log

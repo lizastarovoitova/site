@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Елизавета Старовойтова · репетитор по математике</title>
+  <meta name="description" content="Репетитор по математике для 1-11 класса. Помогаю сдать ОГЭ и ЕГЭ с первого раза и перестать бояться математики.">
+  <meta name="theme-color" content="#e8e8e4">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Елизавета Старовойтова · репетитор по математике">
+  <meta property="og:description" content="Помогаю сдать ОГЭ и ЕГЭ с первого раза и перестать бояться математики.">
+  <meta property="og:image" content="img/elizaveta.webp">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Unbounded:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="img/elizaveta.webp" type="image/webp">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--
+  ПЕРЕД ПУБЛИКАЦИЕЙ:
+  1. Заменить https://t.me/lizastarovoitova на реальный Telegram (поиск по всему файлу).
+  2. Тестовые данные (истории учеников, отзывы, 94 балла, «Ядерная физика»,
+     ответы в FAQ) сверить с Елизаветой.
+-->
+
+<a class="skip" href="#main">Перейти к содержанию</a>
+
+<!-- ============ ШАПКА ============ -->
+<header class="header" id="header">
+  <div class="wrap header__in">
+    <a class="logo" href="#top" aria-label="На главную">
+      <span class="logo__mark" aria-hidden="true">✱</span>
+      <span class="logo__name">Елизавета</span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Основная навигация">
+      <ul class="nav__list">
+        <li><a href="#about">Обо мне</a></li>
+        <li><a href="#help">Занятия</a></li>
+        <li><a href="#results">Результаты</a></li>
+        <li><a href="#prices">Цены</a></li>
+      </ul>
+      <a class="btn btn--dark nav__cta" href="https://t.me/lizastarovoitova" target="_blank" rel="noopener">Написать в Telegram</a>
+    </nav>
+
+    <div class="header__actions">
+      <a class="btn btn--dark btn--sm" href="https://t.me/lizastarovoitova" target="_blank" rel="noopener">Написать</a>
+      <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ ХИРО ============ -->
+  <section class="hero" id="top">
+    <div class="wrap hero__grid">
+      <div class="hero__copy">
+        <p class="hero__role">Репетитор по математике</p>
+        <h1 class="hero__name">
+          <span class="hero__last">Старовойтова</span>
+          <span class="hero__first"><span class="tag">Елизавета</span></span>
+        </h1>
+        <p class="hero__lead">Помогаю сдать ОГЭ и ЕГЭ с&nbsp;первого раза и&nbsp;перестать бояться математики.</p>
+        <div class="hero__actions">
+          <a class="btn btn--dark" href="https://t.me/lizastarovoitova" target="_blank" rel="noopener" data-hero-cta>Написать</a>
+          <a class="btn btn--line" href="#prices">Сколько стоит</a>
+        </div>
+      </div>
+
+      <div class="hero__art">
+        <img class="hero__photo" src="img/liza-avatar.webp" width="960" height="1141" alt="Елизавета Старовойтова" fetchpriority="high">
+      </div>
+    </div>
+
+    <div class="wrap">
+      <ul class="stats">
+        <li class="stats__item"><b class="stats__num">7 лет</b><span>работаю с&nbsp;учениками</span></li>
+        <li class="stats__item"><b class="stats__num">60+</b><span>ребят прошли со&nbsp;мной подготовку</span></li>
+        <li class="stats__item"><b class="stats__num">1-11</b><span>классы, от&nbsp;таблицы умножения до&nbsp;ЕГЭ</span></li>
+        <li class="stats__item"><b class="stats__num">100%</b><span>сдают экзамен с&nbsp;первого раза</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ ОБО МНЕ ============ -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="bar-title reveal">
+        <h2 class="h2">Обо мне</h2>
+        <span class="bar-title__stars" aria-hidden="true">✱✱</span>
+      </div>
+
+      <div class="bento">
+        <article class="card bento__bio reveal">
+          <h3 class="h3">Физик-ядерщик, который объясняет математику <span class="hl nowrap">по-человечески</span></h3>
+          <p>Окончила УрФУ по&nbsp;специальности «Ядерная физика». Математика для меня рабочий инструмент, поэтому я&nbsp;показываю не&nbsp;только как решать, но&nbsp;и&nbsp;зачем это нужно.</p>
+          <svg class="bento__formula" xmlns="http://www.w3.org/2000/svg" viewBox="20 171 4106 862" fill="none" aria-hidden="true">
+            <path d="M1765.0 420.0H2019.0L2036.4112548828125 526.6441040039062L2036.5 526.5Q2075.0 464.0 2130.0 433.0Q2185.0 402.0 2248.0 402.0Q2329.0 402.0 2386.0 435.5Q2443.0 469.0 2473.0 529.5Q2474.20458984375 531.9293212890625 2475.3642578125 534.3991088867188Q2477.6337890625 530.3916015625 2480.0 526.5Q2518.0 464.0 2573.0 433.0Q2628.0 402.0 2691.0 402.0Q2772.0 402.0 2829.5 435.5Q2887.0 469.0 2917.0 529.5Q2947.0 590.0 2947.0 671.0V995.0H2693.0V707.0Q2693.0 659.0 2669.5 633.0Q2646.0 607.0 2602.0 607.0Q2571.0 607.0 2548.5 620.5Q2526.0 634.0 2514.5 659.5Q2503.0 685.0 2503.0 721.0V995.0H2249.0V707.0Q2249.0 659.0 2225.5 633.0Q2202.0 607.0 2158.0 607.0Q2127.0 607.0 2104.5 620.5Q2082.0 634.0 2070.5 659.5Q2059.0 685.0 2059.0 721.0V995.0H1805.0V626.0ZM729.0 531.0V709.0H326.326171875L312.80645751953125 791.0H766.0V995.0H40.0L95.0 620.0L40.0 245.0H761.0V449.0H312.80645751953125L326.326171875 531.0ZM3714.0 742.0Q3707.0 823.0 3657.0 884.0Q3607.0 945.0 3526.5 979.0Q3446.0 1013.0 3345.0 1013.0Q3235.0 1013.0 3151.0 974.5Q3067.0 936.0 3020.0 867.0Q2973.0 798.0 2973.0 708.0Q2973.0 617.0 3020.0 548.5Q3067.0 480.0 3151.0 441.0Q3235.0 402.0 3345.0 402.0Q3446.0 402.0 3526.5 436.0Q3607.0 470.0 3657.0 530.5Q3707.0 591.0 3714.0 673.0H3463.0Q3454.0 630.0 3422.5 608.5Q3391.0 587.0 3345.0 587.0Q3310.0 587.0 3283.5 600.5Q3257.0 614.0 3243.0 641.0Q3229.0 668.0 3229.0 708.0Q3229.0 748.0 3243.0 774.5Q3257.0 801.0 3283.5 814.5Q3310.0 828.0 3345.0 828.0Q3391.0 828.0 3422.5 804.5Q3454.0 781.0 3463.0 742.0ZM3709.0 339.0Q3712.5 293.0 3740.0 259.75Q3767.5 226.5 3813.25 208.75Q3859.0 191.0 3916.0 191.0Q3970.5 191.0 4011.0 207.25Q4051.5 223.5 4074.0 252.25Q4096.5 281.0 4096.5 319.0Q4096.5 348.5 4079.5 374.0Q4062.5 399.5 4027.5 423.0Q3992.5 446.5 3937.5 469.5L3924.344482421875 475.0H4106.0V575.0H3720.0V487.0L3882.0 400.5Q3917.0 382.0 3935.5 370.0Q3954.0 358.0 3961.25 348.25Q3968.5 338.5 3968.5 327.0Q3968.5 314.5 3961.75 306.0Q3955.0 297.5 3942.0 292.75Q3929.0 288.0 3911.0 288.0Q3886.0 288.0 3870.25 295.0Q3854.5 302.0 3846.5 313.5Q3838.5 325.0 3837.0 339.0ZM998.0 421.0H1558.0V601.0H998.0ZM998.0 681.0H1558.0V861.0H998.0Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
+          </svg>
+        </article>
+
+        <figure class="card card--dark bento__quote reveal">
+          <span class="quote-mark" aria-hidden="true">”</span>
+          <blockquote>Математика на «ты». Без&nbsp;страха. Без&nbsp;зубрежки.</blockquote>
+          <figcaption>Главное правило моих занятий</figcaption>
+        </figure>
+
+        <article class="card card--lime bento__exam reveal">
+          <p class="bento__score"><b>94</b> <span>балла</span></p>
+          <p class="bento__small">Мой ЕГЭ по&nbsp;профильной математике</p>
+        </article>
+
+        <article class="card card--dark bento__online reveal">
+          <p>Работаю онлайн по&nbsp;всей России</p>
+        </article>
+
+        <article class="card bento__fipi reveal">
+          <span class="check" aria-hidden="true">
+            <svg width="22" height="18" viewBox="0 0 22 18" fill="none"><path d="M2 9l6 6L20 3" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <p>Проверяю работы по&nbsp;критериям ФИПИ. Ученик заранее знает, как не&nbsp;потерять баллы на&nbsp;экзамене.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Я ПОМОГУ ТЕБЕ ============ -->
+  <section class="section" id="help">
+    <div class="wrap">
+      <h2 class="h1 help__title reveal">
+        <span class="help__line">Я помогу</span>
+        <span class="help__line"><span class="tag">тебе</span></span>
+      </h2>
+
+      <ul class="help">
+        <li class="help__item reveal">
+          <p class="help__grade"><b>1-4</b><span>класс</span></p>
+          <h3 class="help__name">Полюбить математику с&nbsp;самого начала</h3>
+          <p class="help__text">Таблица умножения, задачи на&nbsp;движение и&nbsp;уверенность, что «я&nbsp;тоже умею считать».</p>
+        </li>
+        <li class="help__item reveal">
+          <p class="help__grade"><b>5-8</b><span>класс</span></p>
+          <h3 class="help__name">Закрыть пробелы, пока они маленькие</h3>
+          <p class="help__text">Дроби, уравнения, первые шаги в&nbsp;геометрии. Превращаем тройки в&nbsp;четвёрки и&nbsp;пятёрки.</p>
+        </li>
+        <li class="help__item help__item--dark reveal">
+          <p class="help__grade"><b>9</b><span>класс, ОГЭ</span></p>
+          <h3 class="help__name">Спокойно сдать ОГЭ</h3>
+          <p class="help__text">Разбираем все 25 заданий и&nbsp;раз в&nbsp;месяц решаем пробник в&nbsp;формате настоящего экзамена.</p>
+        </li>
+        <li class="help__item reveal">
+          <p class="help__grade"><b>10-11</b><span>класс, ЕГЭ</span></p>
+          <h3 class="help__name">База и&nbsp;профиль</h3>
+          <p class="help__text">Последовательная и&nbsp;систематичная подготовка к&nbsp;экзамену.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ БЕГУЩАЯ СТРОКА ============ -->
+  <div class="ticker" role="marquee" aria-label="Темы занятий: проценты, производная, логарифмы, дроби, уравнения, вероятность, тригонометрия, стереометрия">
+    <div class="ticker__band">
+      <div class="ticker__track" aria-hidden="true">
+        <span class="ticker__set">Проценты <i>✱</i> Производная <i>✱</i> Логарифмы <i>✱</i> Дроби <i>✱</i> Уравнения <i>✱</i> Вероятность <i>✱</i> Тригонометрия <i>✱</i> Стереометрия <i>✱</i></span>
+        <span class="ticker__set">Проценты <i>✱</i> Производная <i>✱</i> Логарифмы <i>✱</i> Дроби <i>✱</i> Уравнения <i>✱</i> Вероятность <i>✱</i> Тригонометрия <i>✱</i> Стереометрия <i>✱</i></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ КАК Я РАБОТАЮ ============ -->
+  <section class="section section--after-ticker" id="how">
+    <div class="wrap how">
+      <div class="how__side">
+        <h2 class="h1 reveal">Как я <span class="tag">работаю</span></h2>
+        <p class="lead reveal">Три простых шага.<br>От&nbsp;задачи к&nbsp;пониманию.</p>
+
+        <div class="card lesson reveal" id="lesson">
+          <h3 class="lesson__title">Из чего состоит урок</h3>
+          <div class="lesson__bar" aria-hidden="true">
+            <span class="lesson__seg lesson__seg--grey" style="--w:10">10</span>
+            <span class="lesson__seg lesson__seg--dark" style="--w:25">25</span>
+            <span class="lesson__seg lesson__seg--lime" style="--w:20">20</span>
+            <span class="lesson__seg lesson__seg--grey" style="--w:5">5</span>
+          </div>
+          <ul class="lesson__legend">
+            <li><b>10 мин</b> разбор домашки</li>
+            <li><b>25 мин</b> новая тема</li>
+            <li><b>20 мин</b> практика</li>
+            <li><b>5 мин</b> итоги и&nbsp;план</li>
+          </ul>
+        </div>
+      </div>
+
+      <ol class="steps">
+        <li class="card step reveal">
+          <span class="step__num" aria-hidden="true">1</span>
+          <div>
+            <h3 class="h3">Консультация и&nbsp;план</h3>
+            <p>Бесплатная встреча на&nbsp;30&nbsp;минут. Даю короткий тест, смотрю, где пробелы, и&nbsp;составляю план до&nbsp;экзамена или до&nbsp;конца четверти.</p>
+            <span class="chip">План на&nbsp;месяц с&nbsp;темами и&nbsp;сроками</span>
+          </div>
+        </li>
+        <li class="card step reveal">
+          <span class="step__num" aria-hidden="true">2</span>
+          <div>
+            <h3 class="h3">Понятные объяснения</h3>
+            <p>Каждую тему объясняю сначала на&nbsp;примере из&nbsp;жизни, потом через формулу. Сложную задачу разбиваем на&nbsp;короткие шаги.</p>
+            <span class="chip">Конспект урока в&nbsp;Telegram</span>
+          </div>
+        </li>
+        <li class="card card--dark step reveal">
+          <span class="step__num" aria-hidden="true">3</span>
+          <div>
+            <h3 class="h3">Практика и&nbsp;поддержка</h3>
+            <p>Домашку проверяю в&nbsp;течение суток. Отвечаю на&nbsp;вопросы между уроками, а&nbsp;раз в&nbsp;месяц рассказываю родителям о&nbsp;прогрессе.</p>
+            <span class="chip chip--lime">Отчёт для родителей каждый месяц</span>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ РЕЗУЛЬТАТЫ ============ -->
+  <section class="section" id="results">
+    <div class="wrap">
+      <h2 class="h1 reveal">Результаты <span class="tag tag--dark">учеников</span></h2>
+
+      <div class="cases">
+        <article class="card card--dark case case--big reveal">
+          <p class="case__who">Маша, 11 класс, профильный ЕГЭ</p>
+          <p class="case__jump" aria-label="С 52 до 86 баллов">
+            <span class="case__from">52</span>
+            <span class="case__arrow" aria-hidden="true">→</span>
+            <span class="case__to">86</span>
+          </p>
+          <p>Начали в&nbsp;сентябре с&nbsp;пробника на&nbsp;52&nbsp;балла. К&nbsp;маю решала вторую часть, на&nbsp;экзамене получила 86 и&nbsp;поступила в&nbsp;УрФУ на&nbsp;бюджет.</p>
+        </article>
+
+        <article class="card case reveal">
+          <p class="case__who">Артём, 9 класс</p>
+          <p class="case__res">ОГЭ на <span class="hl">«5»</span></p>
+          <p class="muted">В&nbsp;начале года в&nbsp;четверти стояла тройка. Сдал ОГЭ на&nbsp;27&nbsp;баллов из&nbsp;31.</p>
+        </article>
+
+        <article class="card case reveal">
+          <p class="case__who">Соня, 6 класс</p>
+          <p class="case__res">С&nbsp;«3» на <span class="hl">«4»</span></p>
+          <p class="muted">Перестала плакать над дробями. За&nbsp;полгода вышла на&nbsp;четвёрки по&nbsp;математике.</p>
+        </article>
+      </div>
+
+      <div class="reviews" id="reviews">
+        <figure class="card review reveal">
+          <blockquote>«Дочь впервые сама садится за&nbsp;домашку по&nbsp;математике. Елизавета объясняет так, что после урока вопросов не&nbsp;остаётся».</blockquote>
+          <figcaption><b>Ольга</b><span>мама Сони, 6 класс</span></figcaption>
+        </figure>
+        <figure class="card review reveal">
+          <blockquote>«До&nbsp;занятий боялся второй части. На&nbsp;экзамене решил 13 и&nbsp;16 задания, хотя в&nbsp;сентябре даже не&nbsp;открывал их».</blockquote>
+          <figcaption><b>Даниил</b><span>ЕГЭ профиль, 81 балл</span></figcaption>
+        </figure>
+        <figure class="card review reveal">
+          <blockquote>«Нравится, что каждый месяц приходит отчёт. Видно, какие темы закрыли и&nbsp;над чем работаем дальше».</blockquote>
+          <figcaption><b>Ирина</b><span>мама Артёма, 9 класс</span></figcaption>
+        </figure>
+      </div>
+      <div class="dots" id="dots" aria-hidden="true"><span></span><span></span><span></span></div>
+    </div>
+  </section>
+
+  <!-- ============ ЦЕНЫ ============ -->
+  <section class="section" id="prices">
+    <div class="wrap split">
+      <div class="split__side reveal">
+        <h2 class="h1">Цены</h2>
+        <p class="lead">Первая встреча бесплатно. После неё вы&nbsp;решаете, продолжать или нет.</p>
+        <p class="muted">Занятия онлайн на&nbsp;интерактивной доске. Оплата после урока или пакетом на&nbsp;месяц.</p>
+      </div>
+
+      <ul class="prices">
+        <li class="card price reveal">
+          <h3 class="price__name">Консультация</h3>
+          <b class="price__val">0 ₽</b>
+          <p class="price__note">30&nbsp;минут. Знакомимся, проверяю уровень и&nbsp;предлагаю план.</p>
+        </li>
+        <li class="card price reveal">
+          <h3 class="price__name">1 занятие</h3>
+          <b class="price__val">1&nbsp;800&nbsp;₽</b>
+          <p class="price__note">60&nbsp;минут, домашнее задание с&nbsp;проверкой.</p>
+        </li>
+        <li class="card card--lime price price--best reveal">
+          <span class="price__badge">Выгоднее</span>
+          <h3 class="price__name">Пакет 8 занятий</h3>
+          <b class="price__val">13&nbsp;600&nbsp;₽</b>
+          <p class="price__note">1&nbsp;700&nbsp;₽ за&nbsp;занятие. Экономия 800&nbsp;₽ в&nbsp;месяц.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ ВОПРОСЫ ============ -->
+  <section class="section" id="faq">
+    <div class="wrap split">
+      <h2 class="h1 split__side reveal">Частые <span class="tag">вопросы</span></h2>
+
+      <div class="faq reveal">
+        <details class="faq__item" open>
+          <summary>Как проходят онлайн-занятия?<span class="faq__icon" aria-hidden="true"></span></summary>
+          <p>Созваниваемся в&nbsp;Zoom или Telegram и&nbsp;работаем на&nbsp;общей интерактивной доске. Нужен компьютер или планшет, наушники и&nbsp;тетрадь.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Сколько занятий в&nbsp;неделю нужно?<span class="faq__icon" aria-hidden="true"></span></summary>
+          <p>Для школьной программы хватает одного-двух. Для подготовки к&nbsp;ОГЭ и&nbsp;ЕГЭ советую два занятия в&nbsp;неделю, а&nbsp;за&nbsp;три месяца до&nbsp;экзамена три.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Что если занятие нужно пропустить?<span class="faq__icon" aria-hidden="true"></span></summary>
+          <p>Предупредите за&nbsp;12&nbsp;часов, и&nbsp;мы перенесём урок без оплаты. Занятия из&nbsp;пакета сохраняются.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Можно начать в&nbsp;середине учебного года?<span class="faq__icon" aria-hidden="true"></span></summary>
+          <p>Да. На&nbsp;диагностике я&nbsp;увижу, какие темы проседают, и&nbsp;соберу план с&nbsp;учётом оставшегося времени.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ МИССИЯ И ФИНАЛ ============ -->
+  <section class="section" id="contact">
+    <div class="wrap">
+      <p class="mission reveal">
+        <span class="mission__line">Моя миссия <span class="mission__arrow" aria-hidden="true"></span></span>
+        <span class="mission__line"><span class="hl">помочь тебе</span></span>
+        <span class="mission__line"><span class="hl">понять математику</span></span>
+        <span class="mission__line">твоя задача <span class="hk">прийти</span></span>
+      </p>
+
+      <div class="final reveal" id="final">
+        <div>
+          <h2 class="final__title">Первая встреча<br><span class="tag">бесплатно</span></h2>
+          <p class="final__text">Напишите в&nbsp;Telegram, в&nbsp;каком вы&nbsp;классе и&nbsp;что сейчас сложнее всего. Отвечу в&nbsp;течение дня и&nbsp;подберу время.</p>
+        </div>
+        <a class="btn btn--lime btn--lg" href="https://t.me/lizastarovoitova" target="_blank" rel="noopener">Написать</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__in">
+    <span>© 2026 Елизавета Старовойтова</span>
+    <span>Репетитор по математике</span>
+  </div>
+</footer>
+
+<!-- Липкая кнопка для телефона: появляется после хиро, прячется у финального блока -->
+<div class="sticky-cta" id="stickyCta" aria-hidden="true">
+  <a class="btn btn--dark sticky-cta__btn" href="https://t.me/lizastarovoitova" target="_blank" rel="noopener" tabindex="-1">
+    <span>Первая встреча бесплатно</span><span class="sticky-cta__go">Написать</span>
+  </a>
+</div>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

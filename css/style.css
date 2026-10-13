@@ -270,9 +270,11 @@ body.menu-open .header::before { background: var(--bg); }
 /* ---------- Бегущая строка ---------- */
 .ticker { overflow-x: clip; overflow-y: visible; padding-top: clamp(48px, 7vw, 80px); padding-bottom: 4vw; }
 .ticker__band {
+  width: 120vw;
+  margin-left: -10vw;
+  transform: rotate(-2deg);
   background: var(--lime);
   border-block: 2px solid var(--ink);
-  transform: rotate(-2deg);
   margin-inline: -2%;
   padding: clamp(10px, 1.4vw, 18px) 0;
   overflow: hidden;
@@ -503,7 +505,7 @@ body.menu-open .header::before { background: var(--bg); }
   .help__grade span { margin: 0 0 2px; font-size: 13px; font-weight: 600; text-transform: uppercase; }
   .help__name { font-size: 17px; }
 
-  .ticker__band { transform: rotate(-3deg); margin-inline: -6%; }
+  .ticker__band { width: 130vw; margin-left: -15vw; transform: rotate(-3deg); }
 
   /* Как я работаю */
   .how__side > .h1 { font-size: 40px; }

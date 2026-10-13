@@ -268,7 +268,7 @@ body.menu-open .header::before { background: var(--bg); }
 .help__item--dark .help__text, .help__item--dark:hover .help__text { color: var(--ink-3); }
 
 /* ---------- Бегущая строка ---------- */
-.ticker { padding: clamp(48px, 7vw, 80px) 0 8px; }
+.ticker { overflow-x: clip; overflow-y: visible; padding-top: clamp(48px, 7vw, 80px); padding-bottom: 4vw; }
 .ticker__band {
   background: var(--lime);
   border-block: 2px solid var(--ink);

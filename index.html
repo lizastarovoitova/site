@@ -19,13 +19,6 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<!--
-  ПЕРЕД ПУБЛИКАЦИЕЙ:
-  1. Заменить https://t.me/lizastarovoitova на реальный Telegram (поиск по всему файлу).
-  2. Тестовые данные (истории учеников, отзывы, 94 балла, «Ядерная физика»,
-     ответы в FAQ) сверить с Елизаветой.
--->
-
 <a class="skip" href="#main">Перейти к содержанию</a>
 
 <!-- ============ ШАПКА ============ -->
@@ -351,10 +344,57 @@
 </main>
 
 <footer class="footer">
-  <div class="wrap footer__in">
-    <span>© 2026 Елизавета Старовойтова</span>
-    <span>Репетитор по математике</span>
+  <div class="wrap footer__top">
+    <div class="footer__about">
+      <p class="footer__claim">Математика на&nbsp;<span class="hk">«ты»</span></p>
+      <p class="footer__sub">Без страха. Без зубрёжки.<br>Онлайн по&nbsp;всей России, 1-11&nbsp;класс.</p>
+    </div>
+
+    <nav class="footer__col footer__col--nav" aria-label="Разделы сайта">
+      <p class="footer__label">Разделы</p>
+      <ul class="footer__links">
+        <li><a href="#about">Обо мне</a></li>
+        <li><a href="#help">Занятия</a></li>
+        <li><a href="#how">Как я работаю</a></li>
+        <li><a href="#results">Результаты</a></li>
+        <li><a href="#prices">Цены</a></li>
+        <li><a href="#faq">Вопросы</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer__col footer__col--contact">
+      <p class="footer__label">Связь</p>
+      <ul class="footer__links">
+        <li><a href="https://t.me/lizastarovoitova" target="_blank" rel="noopener">Telegram</a></li>
+        <!-- TODO: раскомментировать и вписать номер, если нужен телефон
+        <li><a href="tel:+70000000000">+7 000 000-00-00</a></li> -->
+      </ul>
+      <a class="footer__cta" href="https://t.me/lizastarovoitova" target="_blank" rel="noopener">
+        <span>Первая встреча бесплатно</span>
+        <span class="footer__cta-go" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 14L14 4M14 4H6M14 4v8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+      </a>
+    </div>
+
+    <a class="footer__up" href="#top" aria-label="Наверх">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true"><path d="M11 18V4M11 4l-6 6M11 4l6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
   </div>
+
+  <div class="wrap">
+    <div class="footer__bottom">
+      <span>© 2026 Елизавета Старовойтова</span>
+      <span>Репетитор по математике</span>
+      <!-- Подпись автора сайта: можно убрать или заменить -->
+      <a href="https://kalinin-design.github.io/" target="_blank" rel="noopener">Сайт: Илья Калинин</a>
+    </div>
+  </div>
+  <!-- Большое имя во всю ширину: размер считается от ширины контейнера (cqi) -->
+  <div class="footer__word reveal" aria-hidden="true">
+    <span class="footer__word-text">Старовойтова</span>
+  </div>
+
 </footer>
 
 <!-- Липкая кнопка для телефона: появляется после хиро, прячется у финального блока -->

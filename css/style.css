@@ -727,3 +727,10 @@ body.menu-open .header::before { background: var(--bg); }
   .js .footer__word .footer__word-text { transform: translateY(45%); transition: transform 1.1s var(--ease); }
   .js .footer__word.is-in .footer__word-text { transform: none; }
 }
+
+h2.split__side { display: block; }
+
+.split { grid-template-columns: minmax(min-content, 5fr) minmax(0, 7fr); }
+
+.hero__name { isolation: isolate; }   /* свой контекст наложения */
+.hero__first .tag { position: relative; z-index: -1; }

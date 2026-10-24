@@ -1,0 +1,33 @@
+# Диагностика: видят ли DNS-серверы reg.ru запросы из сети GitHub (Azure, США).
+# Запуск вручную: вкладка Actions → DNS check → Run workflow.
+# После диагностики файл можно удалить.
+
+name: DNS check
+
+on:
+  workflow_dispatch:
+
+jobs:
+  dns:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Установить dig
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq dnsutils > /dev/null
+
+      - name: Откуда идут запросы (внешний IP раннера GitHub)
+        run: curl -s https://api.ipify.org || true
+
+      - name: Напрямую к ns1.reg.ru
+        run: dig @ns1.reg.ru lizastarovoitova.ru A +time=5 +tries=2 || true
+
+      - name: Напрямую к ns2.reg.ru
+        run: dig @ns2.reg.ru lizastarovoitova.ru A +time=5 +tries=2 || true
+
+      - name: CAA напрямую к ns1.reg.ru
+        run: dig @ns1.reg.ru lizastarovoitova.ru CAA +time=5 +tries=2 || true
+
+      - name: Через Google DNS (для сравнения)
+        run: dig @8.8.8.8 lizastarovoitova.ru A +time=5 +tries=2 || true
+
+      - name: Полная цепочка от корня (+trace)
+        run: dig lizastarovoitova.ru A +trace +time=5 +tries=1 || true

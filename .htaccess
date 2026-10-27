@@ -1,0 +1,8 @@
+# Перенаправление всех запросов с http на https.
+# Хостинг стоит за прокси (nginx → Apache), поэтому проверяем и %{HTTPS},
+# и заголовок X-Forwarded-Proto: без второй проверки получится бесконечный редирект.
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
